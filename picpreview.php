@@ -58,7 +58,6 @@
     <a href="images/savedcows/cow3.jpg" title="Shreeya" data-gallery>
         <img src="images/savedcows/cow3_thumbnail.jpg" alt="Shreeya">
     </a>
-</div>
-
+</div> 
 </body>
 </html>

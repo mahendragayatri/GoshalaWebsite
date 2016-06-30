@@ -10,6 +10,21 @@
 <script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
 <script type="text/javascript" src="js/script.js"></script>
 <script type="text/javascript" src="js/coin-slider.min.js"></script>
+<script>
+$(document).ready(function(){
+        //$('#blogContent').html("<strong>Gau Mata Ki Jay!</strong>");
+        $.getJSON("blogReader.php", function(result){
+            $.each(result, function(i, field){
+                  	$("#blogContent").append("<div class=\"article\"><h2><span>" + field.Title+ "</span></h2>");
+                  	$("#blogContent").append("<div class=\"clr\"></div>");
+                  	$("#blogContent").append("<P>" + field.Content + "</P>");
+                  	$("#blogContent").append("<div class=\"clr\"></div>");
+                  	$("#blogContent").append("<P>" + field.author + " - " + field.authorEmail +  "</P>");
+                  	$("#blogContent").append("<div class=\"clr\"></div></div>");					
+            });
+        });    
+});
+</script>
 </head>
 <body>
 <div class="main">
@@ -46,17 +61,7 @@
   </div>
   <div class="content">
     <div class="content_resize">
-      <div class="mainbar">
-        <div class="article">
-          <h2><A HREF="https://docs.google.com/forms/d/1Dw0C8GmVTVFc8ujek0qvUgbQXHeMYOz5J8nubb0p9Zg/viewform"><span>Kids</span> Picture Coloring Contest</A></h2>
-          <div class="clr"></div>
-          <p>Goshala presents an opportunity for kids below the age of 10 to participate in the 2016 picture coloring contest. The picture templates are <A HREF="https://drive.google.com/open?id=0B6fSVDHxB5N_N1dHZVdfN0JZZ00"> HERE </A>  </p>
-          <p>Please take printouts and color any two pictures with your coloring skills and email back a scanned or a clearly photographed copy to goshala.iowa@gmail.com</p>
-          <p>Contest end date - 7/1/2016</p>
-          <p>Voting window would be 3 days prior to results. Results on 7/7/2016 @ www.goshalaiowa.org</p>
-          <p>This contest is aimed at children's awareness on cow protection issues. there are no fees to enter the contest.</p>
-          <A HREF="https://docs.google.com/forms/d/1Dw0C8GmVTVFc8ujek0qvUgbQXHeMYOz5J8nubb0p9Zg/viewform">SIGN UP!</A>
-        </div>        
+      <div class="mainbar" id='blogContent'>           
       </div>
       <div class="sidebar">
         <div class="gadget">
@@ -82,9 +87,9 @@
       <div class="col c1">
       	
         <h2><span>Image</span> Gallery</h2>
-        <a href="picpreview.html" target="_blank"><img src="images/savedcows/cow1_thumbnail.jpg" width="75" height="75" alt="" class="gal" /></a> 
-        <a href="picpreview.html" target="_blank"><img src="images/savedcows/cow2_thumbnail.jpg" width="75" height="75" alt="" class="gal" />   	
-        </a> <a href="picpreview.html" target="_blank"><img src="images/savedcows/cow3_thumbnail.jpg" width="75" height="75" alt="" class="gal" /></a> 
+        <a href="picpreview.php" target="_blank"><img src="images/savedcows/cow1_thumbnail.jpg" width="75" height="75" alt="" class="gal" /></a> 
+        <a href="picpreview.php" target="_blank"><img src="images/savedcows/cow2_thumbnail.jpg" width="75" height="75" alt="" class="gal" />   	
+        </a> <a href="picpreview.php" target="_blank"><img src="images/savedcows/cow3_thumbnail.jpg" width="75" height="75" alt="" class="gal" /></a> 
       </div>
       <div class="col c2">
         <!--

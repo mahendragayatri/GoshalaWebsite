@@ -10,6 +10,21 @@
 <script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
 <script type="text/javascript" src="js/script.js"></script>
 <script type="text/javascript" src="js/coin-slider.min.js"></script>
+<script>
+$(document).ready(function(){
+        //$('#blogContent').html("<strong>Gau Mata Ki Jay!</strong>");
+        $.getJSON("blogReader.php", function(result){
+            $.each(result, function(i, field){
+                  	$("#blogContent").append("<div class=\"article\"><h2><span>" + field.Title+ "</span></h2>");
+                  	$("#blogContent").append("<div class=\"clr\"></div>");
+                  	$("#blogContent").append("<P>" + field.Content + "</P>");
+                  	$("#blogContent").append("<div class=\"clr\"></div>");
+                  	$("#blogContent").append("<P>" + field.author + " - " + field.authorEmail +  "</P>");
+                  	$("#blogContent").append("<div class=\"clr\"></div></div>");					
+            });
+        });    
+});
+</script>
 </head>
 <body>
 <div class="main">
@@ -46,14 +61,7 @@
   </div>
   <div class="content">
     <div class="content_resize">
-      <div class="mainbar">
-        <div class="article">
-          <h2><span></span></h2>
-          <div class="clr"></div>
-          <div class="img"><img src="images/img1.jpg" width="250" height="229" alt="" class="fl" /></div>          
-        </div>
-        <div class="article">          
-        </div>
+      <div class="mainbar" id='blogContent'>        
       </div>
       <div class="sidebar">
         <div class="gadget">          
@@ -79,9 +87,9 @@
       <div class="col c1">
       	
         <h2><span>Image</span> Gallery</h2>
-        <a href="picpreview.html" target="_blank"><img src="images/savedcows/cow1_thumbnail.jpg" width="75" height="75" alt="" class="gal" /></a> 
-        <a href="picpreview.html" target="_blank"><img src="images/savedcows/cow2_thumbnail.jpg" width="75" height="75" alt="" class="gal" />   	
-        </a> <a href="picpreview.html" target="_blank"><img src="images/savedcows/cow3_thumbnail.jpg" width="75" height="75" alt="" class="gal" /></a> 
+        <a href="picpreview.php" target="_blank"><img src="images/savedcows/cow1_thumbnail.jpg" width="75" height="75" alt="" class="gal" /></a> 
+        <a href="picpreview.php" target="_blank"><img src="images/savedcows/cow2_thumbnail.jpg" width="75" height="75" alt="" class="gal" />   	
+        </a> <a href="picpreview.php" target="_blank"><img src="images/savedcows/cow3_thumbnail.jpg" width="75" height="75" alt="" class="gal" /></a> 
       </div>
       <div class="col c2">
         <!--
@@ -112,4 +120,5 @@
   </div>
 </div>
 </body>
+
 </html>
