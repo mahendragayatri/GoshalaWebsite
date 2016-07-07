@@ -53,10 +53,29 @@
         <img src="images/savedcows/cow1_thumbnail.jpg" alt="Shivaguru">
     </a>
     <a href="images/savedcows/cow2.jpg" title="Malati and Manjari" data-gallery>
-        <img src="images/savedcows/cow2_thumbnail.jpg" alt="Malati and Manjari">
+       <img src="images/savedcows/cow2_thumbnail.jpg" alt="Malati and Manjari">
     </a>
     <a href="images/savedcows/cow3.jpg" title="Shreeya" data-gallery>
-        <img src="images/savedcows/cow3_thumbnail.jpg" alt="Shreeya">
+       <img src="images/savedcows/cow3_thumbnail.jpg" alt="Shreeya">
+    </a><br/>
+    <strong>2016 Kids Picture Contest Drawings</strong><br/>
+    <a href="images/contest/2016_1_1.jpg" title="Raghav Gayatri, 3 yrs" data-gallery>
+        <img src="images/contest/2016_1_1_tn.jpg" alt="Raghav">
+    </a>
+    <a href="images/contest/2016_1_2.jpg" title="Raghav Gayatri, 3 yrs" data-gallery>
+       <img src="images/contest/2016_1_2_tn.jpg" alt="Raghav">
+    </a>
+    <a href="images/contest/2016_2_1.jpg" title="Sreekar Thotapalle, 6 yrs" data-gallery>
+       <img src="images/contest/2016_2_1_tn.jpg" alt="Sreekar">
+    </a>
+    <a href="images/contest/2016_3_1.jpg" title="Sneha Hegde, 9 yrs" data-gallery>
+        <img src="images/contest/2016_3_1_tn.jpg" alt="Sneha">
+    </a>
+    <a href="images/contest/2016_3_2.jpg" title="Sneha Hegde, 9 yrs" data-gallery>
+       <img src="images/contest/2016_3_2_tn.jpg" alt="Sneha">
+    </a>
+    <a href="images/contest/2016_3_3.jpg" title="Sneha Hegde, 9 yrs" data-gallery>
+       <img src="images/contest/2016_3_3_tn.jpg" alt="Sneha">
     </a>
 </div> 
 </body>
