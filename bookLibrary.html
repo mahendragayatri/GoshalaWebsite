@@ -1,0 +1,46 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title></title>
+		<script type="text/javascript" src="js/jquery-1.12.4.js"></script>
+		<script>
+			$(function() {
+				$("#header").load("header.html");
+				$("#bannerScroller").load("bannerScroller.html");
+				$("#BookTable").load("BookTableDisplay.html");
+				$("#bannerScroller").load("bannerScroller.html");
+				$("#BookSelectSubmit").load("BookSelectSubmit.html");
+				$("#footer").load("footer.html");
+			});
+		</script>
+		<!-- Bootstrap -->
+	<link rel="stylesheet" href="js/bootstrap/css/bootstrap.min.css">
+
+	</head>
+	<body>
+		<div id="header"></div>
+		<div id="bannerScroller"></div>
+		<!--Remaining section-->
+		<div class="main">
+			<div class="content">
+				<form	action="https://formspree.io/f/mvovvynb" method="POST">
+					<div class="content_resize">
+						<div class="mainbar" id='blogContent'>
+							<div class="article">
+								<h3>Order Books Online - All profits go to Goshala non-profit activities</h3>
+								<div class="clr"></div>
+
+								<div id="BookTable"></div>
+							</div>
+						</div>
+						<div id="BookSelectSubmit" class="sidebar"></div>
+
+						<div class="clr"></div>
+					</div>
+				</form>
+			</div>
+
+		</div>
+		<div id="footer"></div>
+	</body>
+</html>
